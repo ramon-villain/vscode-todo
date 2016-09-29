@@ -15,7 +15,8 @@ var swift = 'Swift';
 var typescript = 'TypeScript';
 var visualbasic = 'VisualBasic';
 var rust = 'Rust';
-var elm = "Elm"
+var stylus = 'Stylus';
+var elm = 'Elm'
 var typescriptReact = 'TypeScript-React'
 
 language[all] = {
@@ -42,6 +43,12 @@ language[php] = {
     name: php,
     alias: 'php',
     extension: '**/*.php',
+    exclude: '',
+};
+language[stylus] = {
+    name: stylus,
+    alias: 'stylus',
+        extension: '**/*.styl',
     exclude: '',
 };
 
@@ -137,13 +144,13 @@ language[typescriptReact] = {
 }
 
 language.all = [language[all], language[go], language[javascript],
-    language[php], language[coffeescript], language[c], language[cpp],
+    language[php], language[coffeescript],language[stylus], language[c], language[cpp],
     language[csharp], language[objectivec], language[python], language[ruby],
     language[swift], language[typescript], language[visualbasic], language[rust],
     language[elm], language[typescriptReact]
 ];
 
-language.allName = [all, go, javascript, php, coffeescript, c, cpp, csharp,
+language.allName = [all, go, javascript, php, coffeescript, stylus, c, cpp, csharp,
     objectivec, python, ruby, swift, typescript, visualbasic, rust, elm,
     typescriptReact
 ];
